@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_3.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Rock_4.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Mushroom_1.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Rock_1.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_4.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Hollow_Trunk.obj" type="ArrayMesh" id=7]
+
+[node name="background" type="MeshInstance"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -8.73525, 1.2827, -1.79112 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../holm1")
+material/0 = null
+
+[node name="grass2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.405778, 0, 0.437231 )
+
+[node name="Hilly_Prop_Mushroom_1" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.1, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.248166, 0.175152, -0.542879 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Mushroom_2" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.8, 0, 0, 0, 0.1, 0.509177, 0.130744, -0.0611554 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Hilly_Prop_Mushroom_3" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.05, 0, 0, 0, 1, 0, 0, 0, 0.05, 0.598961, 0.11271, -0.110466 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+
+[node name="Hilly_Prop_Mushroom_5" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.4, 0, 0, 0, 0.03, 0.220233, 0.142426, -0.300378 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+
+[node name="Hilly_Prop_Mushroom_6" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.4, 0, 0, 0, 0.03, 0.351419, 0.145423, -0.785591 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Mushroom_7" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.4, 0, 0, 0, 0.03, 0.505231, 0.145423, -0.124995 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Mushroom_8" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, 0.50523, 0.145423, -0.549303 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Mushroom_9" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, 0.747181, 0.145423, -0.589154 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Mushroom_10" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, 0.116234, 0.145423, -0.654213 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Mushroom_11" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, 0.190268, 0.145423, -0.196879 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Mushroom_12" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, 0.0683582, 0.145423, -0.0646219 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Mushroom_13" type="MeshInstance" parent="grass2"]
+transform = Transform( 0.03, 0, 0, 0, 0.399999, 0, 0, 0, 0.03, -0.0166874, 0.145422, -0.185579 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../../DirectionalLight")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null

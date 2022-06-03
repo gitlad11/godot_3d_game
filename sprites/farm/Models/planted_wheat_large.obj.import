@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planted_wheat_large.obj-00f899f24e397711b7418b981a5ffa54.mesh"
+
+[deps]
+
+files=[ "res://.import/planted_wheat_large.obj-00f899f24e397711b7418b981a5ffa54.mesh" ]
+
+source_file="res://sprites/farm/Models/planted_wheat_large.obj"
+dest_files=[ "res://.import/planted_wheat_large.obj-00f899f24e397711b7418b981a5ffa54.mesh", "res://.import/planted_wheat_large.obj-00f899f24e397711b7418b981a5ffa54.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

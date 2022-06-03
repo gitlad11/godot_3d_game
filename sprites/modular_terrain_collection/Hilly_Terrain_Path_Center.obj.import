@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Terrain_Path_Center.obj-e5e73fa1f25a6d87c5c43afd12e1257b.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Terrain_Path_Center.obj-e5e73fa1f25a6d87c5c43afd12e1257b.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Center.obj"
+dest_files=[ "res://.import/Hilly_Terrain_Path_Center.obj-e5e73fa1f25a6d87c5c43afd12e1257b.mesh", "res://.import/Hilly_Terrain_Path_Center.obj-e5e73fa1f25a6d87c5c43afd12e1257b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 3, 3, 3 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

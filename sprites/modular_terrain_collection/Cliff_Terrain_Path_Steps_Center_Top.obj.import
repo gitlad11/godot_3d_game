@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Terrain_Path_Steps_Center_Top.obj-97c58ca8d60fccaf082a36f897f0be1c.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Terrain_Path_Steps_Center_Top.obj-97c58ca8d60fccaf082a36f897f0be1c.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cliff_Terrain_Path_Steps_Center_Top.obj"
+dest_files=[ "res://.import/Cliff_Terrain_Path_Steps_Center_Top.obj-97c58ca8d60fccaf082a36f897f0be1c.mesh", "res://.import/Cliff_Terrain_Path_Steps_Center_Top.obj-97c58ca8d60fccaf082a36f897f0be1c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

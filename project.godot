@@ -1,0 +1,338 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "AspectNode",
+"language": "GDScript",
+"path": "res://addons/awesome_splash/core/AspectNode.gd"
+}, {
+"base": "Node2D",
+"class": "AweListTextNode",
+"language": "GDScript",
+"path": "res://addons/awesome_splash/text_node/AweListTextNode.gd"
+}, {
+"base": "Node2D",
+"class": "AweSplashScreen",
+"language": "GDScript",
+"path": "res://addons/awesome_splash/core/AweSplashScreen.gd"
+}, {
+"base": "Reference",
+"class": "AweSplashScreenViewport",
+"language": "GDScript",
+"path": "res://addons/awesome_splash/core/AweSplashScreenViewport.gd"
+}, {
+"base": "Node2D",
+"class": "AweTextNode",
+"language": "GDScript",
+"path": "res://addons/awesome_splash/text_node/AweTextNode.gd"
+}, {
+"base": "Reference",
+"class": "GDAction",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDAction.gd"
+}, {
+"base": "Reference",
+"class": "GDActionColorize",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/Colorize/GDActionColorize.gd"
+}, {
+"base": "Reference",
+"class": "GDActionCustomAction",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Custom/GDActionCustomAction.gd"
+}, {
+"base": "Reference",
+"class": "GDActionFadeAlphaBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/FadeAlphaBy/GDActionFadeAlphaBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionFadeAlphaTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/FadeAlphaTo/GDActionFadeAlphaTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionGroup",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Group/GDActionGroup.gd"
+}, {
+"base": "Reference",
+"class": "GDActionInstant",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDActionInstant.gd"
+}, {
+"base": "Reference",
+"class": "GDActionInterval",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDActionInterval.gd"
+}, {
+"base": "Reference",
+"class": "GDActionMoveBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/MoveBy/GDActionMoveBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionMoveTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/MoveTo/GDActionMoveTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNode",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDActionNode.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeColorize",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/Colorize/GDActionNodeColorize.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeCustomAction",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Custom/GDActionNodeCustomAction.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeFadeAlphaBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/FadeAlphaBy/GDActionNodeFadeAlpha.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeFadeAlphaTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/FadeAlphaTo/GDActionNodeFadeAlphaTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeGroup",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Group/GDActionNodeGroup.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeInstant",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDActionNodeInstant.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeInterval",
+"language": "GDScript",
+"path": "res://addons/godot-action/Core/GDActionNodeInterval.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeMoveBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/MoveBy/GDActionNodeMoveBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeMoveTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/MoveTo/GDActionNodeMoveTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodePerform",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Perform/GDActionNodePerform.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRemove",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/RemoveNode/GDActionNodeRemove.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRepeat",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Repeat/GDActionNodeRepeat.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRepeatForever",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/RepeatForever/GDActionNodeRepeatForever.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRotateBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/RotateBy/GDActionNodeRotateBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRotateTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/RotateTo/GDActionNodeRotateTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeRun",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Run/GDActionNodeRun.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeScaleBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/ScaleBy/GDActionNodeScaleBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeScaleTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/ScaleTo/GDActionNodeScaleTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeSequence",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Sequence/GDActionNodeSequence.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeVisibility",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Visibility/GDActionNodeVisibility.gd"
+}, {
+"base": "Reference",
+"class": "GDActionNodeWait",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Wait/GDActionNodeWait.gd"
+}, {
+"base": "Reference",
+"class": "GDActionPerform",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Perform/GDActionPerform.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRemove",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/RemoveNode/GDActionRemove.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRepeat",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Repeat/GDActionRepeat.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRepeatForever",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/RepeatForever/GDActionRepeatForever.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRotateBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/RotateBy/GDActionRotateBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRotateTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/RotateTo/GDActionRotateTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionRun",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/CustomAction/Run/GDActionRun.gd"
+}, {
+"base": "Reference",
+"class": "GDActionScaleBy",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/ScaleBy/GDActionScaleBy.gd"
+}, {
+"base": "Reference",
+"class": "GDActionScaleTo",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Animating/ScaleTo/GDActionScaleTo.gd"
+}, {
+"base": "Reference",
+"class": "GDActionSequence",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Chaining/Sequence/GDActionSequence.gd"
+}, {
+"base": "Reference",
+"class": "GDActionVisibility",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Visibility/GDActionVisibility.gd"
+}, {
+"base": "Reference",
+"class": "GDActionWait",
+"language": "GDScript",
+"path": "res://addons/godot-action/GDAction/Wait/GDActionWait.gd"
+}, {
+"base": "Reference",
+"class": "GDEaseFunc",
+"language": "GDScript",
+"path": "res://addons/godot-action/ease_func.gd"
+} ]
+_global_script_class_icons={
+"AspectNode": "",
+"AweListTextNode": "",
+"AweSplashScreen": "",
+"AweSplashScreenViewport": "",
+"AweTextNode": "",
+"GDAction": "",
+"GDActionColorize": "",
+"GDActionCustomAction": "",
+"GDActionFadeAlphaBy": "",
+"GDActionFadeAlphaTo": "",
+"GDActionGroup": "",
+"GDActionInstant": "",
+"GDActionInterval": "",
+"GDActionMoveBy": "",
+"GDActionMoveTo": "",
+"GDActionNode": "",
+"GDActionNodeColorize": "",
+"GDActionNodeCustomAction": "",
+"GDActionNodeFadeAlphaBy": "",
+"GDActionNodeFadeAlphaTo": "",
+"GDActionNodeGroup": "",
+"GDActionNodeInstant": "",
+"GDActionNodeInterval": "",
+"GDActionNodeMoveBy": "",
+"GDActionNodeMoveTo": "",
+"GDActionNodePerform": "",
+"GDActionNodeRemove": "",
+"GDActionNodeRepeat": "",
+"GDActionNodeRepeatForever": "",
+"GDActionNodeRotateBy": "",
+"GDActionNodeRotateTo": "",
+"GDActionNodeRun": "",
+"GDActionNodeScaleBy": "",
+"GDActionNodeScaleTo": "",
+"GDActionNodeSequence": "",
+"GDActionNodeVisibility": "",
+"GDActionNodeWait": "",
+"GDActionPerform": "",
+"GDActionRemove": "",
+"GDActionRepeat": "",
+"GDActionRepeatForever": "",
+"GDActionRotateBy": "",
+"GDActionRotateTo": "",
+"GDActionRun": "",
+"GDActionScaleBy": "",
+"GDActionScaleTo": "",
+"GDActionSequence": "",
+"GDActionVisibility": "",
+"GDActionWait": "",
+"GDEaseFunc": ""
+}
+
+[application]
+
+config/name="Kitchen Gd"
+run/main_scene="res://island1.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+gd="*res://addons/godot-action/utils_gd_action.tscn"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/awesome_splash/plugin.cfg", "res://addons/godot-action/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

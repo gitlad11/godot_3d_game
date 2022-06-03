@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planted_cabbage.obj-b2e4a44ccd5d7f87e49d4c95648eaa55.mesh"
+
+[deps]
+
+files=[ "res://.import/planted_cabbage.obj-b2e4a44ccd5d7f87e49d4c95648eaa55.mesh" ]
+
+source_file="res://sprites/farm/Models/planted_cabbage.obj"
+dest_files=[ "res://.import/planted_cabbage.obj-b2e4a44ccd5d7f87e49d4c95648eaa55.mesh", "res://.import/planted_cabbage.obj-b2e4a44ccd5d7f87e49d4c95648eaa55.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

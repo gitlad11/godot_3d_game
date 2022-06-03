@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Prop_Support_Corner_Brace_1.obj-b8d82fe20ddf869111f6f2a8cf3e5e0c.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Prop_Support_Corner_Brace_1.obj-b8d82fe20ddf869111f6f2a8cf3e5e0c.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cave_Prop_Support_Corner_Brace_1.obj"
+dest_files=[ "res://.import/Cave_Prop_Support_Corner_Brace_1.obj-b8d82fe20ddf869111f6f2a8cf3e5e0c.mesh", "res://.import/Cave_Prop_Support_Corner_Brace_1.obj-b8d82fe20ddf869111f6f2a8cf3e5e0c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

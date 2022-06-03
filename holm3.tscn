@@ -1,0 +1,291 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Outer_3x3.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Side_Sharp.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Branch_1.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_3.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_1.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Flower_Daisy.obj" type="ArrayMesh" id=7]
+
+[node name="holm3" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.28305, -0.272994, 16.6456 )
+
+[node name="Shared_Prop_Boulder_6" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 3.36563, 1, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_7" type="MeshInstance" parent="."]
+transform = Transform( -8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 3.38509, 1, 12.4774 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_10" type="MeshInstance" parent="."]
+transform = Transform( -6.11959e-07, 0, -10, 0, 2, 0, 14, 0, -4.37114e-07, -2.10006, 2.98086, 6.66144 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_11" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-07, 0, -2, 0, 2, 0, 10, 0, -8.74228e-08, 3.43441, 2.98086, 6.66144 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_12" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-07, 0, -2, 0, 2, 0, 10, 0, -8.74228e-08, -7.74764, 2.98086, 6.66144 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_8" type="MeshInstance" parent="."]
+transform = Transform( -2, 0, -3.01992e-07, 0, 2, 0, 3.01992e-07, 0, -2, -7.6223, 1, 12.6198 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Shared_Prop_Boulder_9" type="MeshInstance" parent="."]
+transform = Transform( -8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -7.61808, 1, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -2.22701, 0.983466, -3.00588 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest2" type="MeshInstance" parent="."]
+transform = Transform( -10, 0, -3.01992e-07, 0, 2, 0, 1.50996e-06, 0, -2, -2.47808, 0.983466, 16.54 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest3" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-07, 0, -2, 0, 2, 0, 10, 0, -8.74228e-08, 7.3565, 0.983466, 6.66314 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest4" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-07, 0, 2, 0, 2, 0, -10, 0, -8.74228e-08, -11.6405, 0.983466, 6.81089 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Hilly_Prop_Branch_12" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -2.58775, 3.41647, 12.3227 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_13" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -5.5863, 3.41647, 13.3681 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_8" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, 2.00418, 3.41647, 7.12974 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_16" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, 3.34222, 3.41647, 10.8954 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_15" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, 2.21519, 3.41647, 12.7066 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_14" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -7.67896, 3.41647, 10.8954 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_11" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -2.58775, 3.41647, 0.726963 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_10" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -6.28548, 3.41647, 3.65255 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_9" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -7.0646, 3.41647, 1.78809 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_7" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -7.0646, 3.41647, 7.12974 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_6" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -3.59143, 3.41647, 8.66086 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_5" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -1.84083, 3.41647, 4.82364 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_20" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -4.60083, 3.41647, 0.883797 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Hilly_Prop_Branch_19" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -5.35576, 3.41647, 0.665171 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Hilly_Prop_Branch_18" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -4.62253, 3.41647, 0.190186 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Hilly_Prop_Branch_17" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -3.82138, 3.41647, 0.784325 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Hilly_Prop_Branch_3" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, 0.2, 0, 0.4, 0, -0.2, 0, 0.34641, -6.34294, 3.41647, 6.81174 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Hilly_Prop_Branch_4" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.34641, 0, -0.2, 0, 0.4, 0, 0.2, 0, 0.34641, -3.82138, 3.41647, 4.82364 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Hilly_Prop_Branch_21" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.0694592, 0, 0.393923, 0, 0.4, 0, -0.393923, 0, 0.0694592, 3.532, 3.41647, 1.13025 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null

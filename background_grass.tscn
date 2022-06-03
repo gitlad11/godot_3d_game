@@ -1,0 +1,102 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_3.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Flower_Lily_Pink.obj" type="ArrayMesh" id=3]
+
+[node name="background_grass" type="MeshInstance"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -7.516, 1, -11.716 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink" type="MeshInstance" parent="."]
+transform = Transform( 0.0999999, 0, 0, 0, 1, 0, 0, 0, 0.0999999, -0.143335, 0.236336, 0.0306301 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink2" type="MeshInstance" parent="."]
+transform = Transform( 0.0999999, 0, 0, 0, 1, 0, 0, 0, 0.0999999, -0.0720716, 0.236336, -0.0429454 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink3" type="MeshInstance" parent="."]
+transform = Transform( 0.05, 0, 0, 0, 0.5, 0, 0, 0, 0.05, 0.0381653, 0.19166, -0.293799 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink4" type="MeshInstance" parent="."]
+transform = Transform( 0.05, 0, 0, 0, 0.5, 0, 0, 0, 0.05, 0.318781, 0.19166, 0.00718653 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink5" type="MeshInstance" parent="."]
+transform = Transform( 0.04, 0, 0, 0, 0.4, 0, 0, 0, 0.04, -0.0616038, 0.19166, 0.00718653 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink7" type="MeshInstance" parent="."]
+transform = Transform( 0.04, 0, 0, 0, 0.4, 0, 0, 0, 0.04, -0.340681, 0.19166, 0.352312 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink8" type="MeshInstance" parent="."]
+transform = Transform( 0.04, 0, 0, 0, 0.4, 0, 0, 0, 0.04, 0.318326, 0.19166, 0.352312 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink9" type="MeshInstance" parent="."]
+transform = Transform( 0.04, 0, 0, 0, 0.4, 0, 0, 0, 0.04, 0.463776, 0.19166, -0.415106 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Flower_Lily_Pink6" type="MeshInstance" parent="."]
+transform = Transform( 0.04, 0, 0, 0, 0.4, 0, 0, 0, 0.04, -0.355223, 0.19166, -0.373327 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../../background4")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null

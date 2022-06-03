@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Escarpment_Terrain_Side_Mid.obj-6d406e7a02235f69b1987db3a4708ba6.mesh"
+
+[deps]
+
+files=[ "res://.import/Escarpment_Terrain_Side_Mid.obj-6d406e7a02235f69b1987db3a4708ba6.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Escarpment_Terrain_Side_Mid.obj"
+dest_files=[ "res://.import/Escarpment_Terrain_Side_Mid.obj-6d406e7a02235f69b1987db3a4708ba6.mesh", "res://.import/Escarpment_Terrain_Side_Mid.obj-6d406e7a02235f69b1987db3a4708ba6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

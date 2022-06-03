@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Beach_Terrain_Sand_Side_Gentle.obj-7dfe98fb2390f66b6d851f83f6e3723d.mesh"
+
+[deps]
+
+files=[ "res://.import/Beach_Terrain_Sand_Side_Gentle.obj-7dfe98fb2390f66b6d851f83f6e3723d.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Beach_Terrain_Sand_Side_Gentle.obj"
+dest_files=[ "res://.import/Beach_Terrain_Sand_Side_Gentle.obj-7dfe98fb2390f66b6d851f83f6e3723d.mesh", "res://.import/Beach_Terrain_Sand_Side_Gentle.obj-7dfe98fb2390f66b6d851f83f6e3723d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

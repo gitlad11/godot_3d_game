@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/farmland.obj-07eb534a2e9b15ccc0f9250d65ba8b5c.mesh"
+
+[deps]
+
+files=[ "res://.import/farmland.obj-07eb534a2e9b15ccc0f9250d65ba8b5c.mesh" ]
+
+source_file="res://sprites/farm/Models/farmland.obj"
+dest_files=[ "res://.import/farmland.obj-07eb534a2e9b15ccc0f9250d65ba8b5c.mesh", "res://.import/farmland.obj-07eb534a2e9b15ccc0f9250d65ba8b5c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 2, 2, 2 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

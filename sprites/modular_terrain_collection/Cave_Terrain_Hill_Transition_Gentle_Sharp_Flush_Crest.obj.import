@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cave_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest.obj-e9009c8e011e6eb67709e98fdb3f1c72.mesh"
+
+[deps]
+
+files=[ "res://.import/Cave_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest.obj-e9009c8e011e6eb67709e98fdb3f1c72.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cave_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest.obj"
+dest_files=[ "res://.import/Cave_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest.obj-e9009c8e011e6eb67709e98fdb3f1c72.mesh", "res://.import/Cave_Terrain_Hill_Transition_Gentle_Sharp_Flush_Crest.obj-e9009c8e011e6eb67709e98fdb3f1c72.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

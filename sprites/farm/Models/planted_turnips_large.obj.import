@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planted_turnips_large.obj-920cf6122b3bed7a098cb40407ed3f4a.mesh"
+
+[deps]
+
+files=[ "res://.import/planted_turnips_large.obj-920cf6122b3bed7a098cb40407ed3f4a.mesh" ]
+
+source_file="res://sprites/farm/Models/planted_turnips_large.obj"
+dest_files=[ "res://.import/planted_turnips_large.obj-920cf6122b3bed7a098cb40407ed3f4a.mesh", "res://.import/planted_turnips_large.obj-920cf6122b3bed7a098cb40407ed3f4a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

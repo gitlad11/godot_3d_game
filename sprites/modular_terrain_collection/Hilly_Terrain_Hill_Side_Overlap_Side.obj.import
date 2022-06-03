@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Terrain_Hill_Side_Overlap_Side.obj-a60e828339bd5e503a977403c067d394.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Terrain_Hill_Side_Overlap_Side.obj-a60e828339bd5e503a977403c067d394.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Side_Overlap_Side.obj"
+dest_files=[ "res://.import/Hilly_Terrain_Hill_Side_Overlap_Side.obj-a60e828339bd5e503a977403c067d394.mesh", "res://.import/Hilly_Terrain_Hill_Side_Overlap_Side.obj-a60e828339bd5e503a977403c067d394.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

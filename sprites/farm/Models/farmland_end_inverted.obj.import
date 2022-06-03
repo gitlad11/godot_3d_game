@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/farmland_end_inverted.obj-037e5fc943fae3329bc0af71e13f0196.mesh"
+
+[deps]
+
+files=[ "res://.import/farmland_end_inverted.obj-037e5fc943fae3329bc0af71e13f0196.mesh" ]
+
+source_file="res://sprites/farm/Models/farmland_end_inverted.obj"
+dest_files=[ "res://.import/farmland_end_inverted.obj-037e5fc943fae3329bc0af71e13f0196.mesh", "res://.import/farmland_end_inverted.obj-037e5fc943fae3329bc0af71e13f0196.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 2, 2, 2 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

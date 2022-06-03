@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Terrain_Waterfall_Water_Mid_Edge.obj-48bafe4ed60496394d4aa513863d47c5.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Terrain_Waterfall_Water_Mid_Edge.obj-48bafe4ed60496394d4aa513863d47c5.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cliff_Terrain_Waterfall_Water_Mid_Edge.obj"
+dest_files=[ "res://.import/Cliff_Terrain_Waterfall_Water_Mid_Edge.obj-48bafe4ed60496394d4aa513863d47c5.mesh", "res://.import/Cliff_Terrain_Waterfall_Water_Mid_Edge.obj-48bafe4ed60496394d4aa513863d47c5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Side.obj-963bd9ed5771588e4f229e1303accde7.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Side.obj-963bd9ed5771588e4f229e1303accde7.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Hill_Gentle_Plain_Side.obj"
+dest_files=[ "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Side.obj-963bd9ed5771588e4f229e1303accde7.mesh", "res://.import/Hilly_Terrain_Path_Hill_Gentle_Plain_Side.obj-963bd9ed5771588e4f229e1303accde7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

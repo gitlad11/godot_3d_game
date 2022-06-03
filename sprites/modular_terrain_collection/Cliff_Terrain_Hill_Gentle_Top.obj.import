@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Terrain_Hill_Gentle_Top.obj-121e9b1c5c4cc0436a68f1fdb70fd7cc.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Terrain_Hill_Gentle_Top.obj-121e9b1c5c4cc0436a68f1fdb70fd7cc.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cliff_Terrain_Hill_Gentle_Top.obj"
+dest_files=[ "res://.import/Cliff_Terrain_Hill_Gentle_Top.obj-121e9b1c5c4cc0436a68f1fdb70fd7cc.mesh", "res://.import/Cliff_Terrain_Hill_Gentle_Top.obj-121e9b1c5c4cc0436a68f1fdb70fd7cc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

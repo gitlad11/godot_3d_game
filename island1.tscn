@@ -1,0 +1,1085 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://background2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://background_grass.tscn" type="PackedScene" id=3]
+[ext_resource path="res://holm1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://holm3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Inner_2x2.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Side_Sharp.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Outer_2x2.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Terrain_Sand_Side_Gentle.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Terrain_Sand_Floor_Raised.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Terrain_Sand_Corner_Outer_4x4.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Water_Flat.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://plantasion.tscn" type="PackedScene" id=14]
+[ext_resource path="res://sprites/farm/Models/planted_carrots_large.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Prop_Docks_Straight.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Prop_Docks_Straight_Supports.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Prop_Starfish_1.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Prop_Docks_Steps.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://sprites/modular_terrain_collection/Beach_Prop_Shell_2.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://camera.gd" type="Script" id=21]
+
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_energy = 1.61
+fog_enabled = true
+fog_depth_end = 477.4
+
+[sub_resource type="SphereShape" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 9.62633, 40, -9.81571 )
+light_energy = 2.908
+light_specular = 0.794
+light_bake_mode = 2
+shadow_enabled = true
+
+[node name="background" parent="." instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -17.2163, 1, -11.6491 )
+
+[node name="background6" parent="." instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 20.8036, 1, 6.06646 )
+
+[node name="background3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -8.73011, 1.03286, 8.1199 )
+
+[node name="background9" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-07, 0, 10, 0, 1, 0, -10, 0, -4.37114e-07, -28.5778, 1, 7.63615 )
+
+[node name="background2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -18.582, 1, -1.834 )
+
+[node name="background12" parent="." instance=ExtResource( 2 )]
+transform = Transform( -10, 0, -8.74228e-07, 0, 1, 0, 8.74228e-07, 0, -10, -28.4808, 1, -1.834 )
+
+[node name="background4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.23525, 1, -11.7079 )
+
+[node name="background7" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 20.7982, 1, 15.8708 )
+
+[node name="background13" parent="." instance=ExtResource( 2 )]
+transform = Transform( -10, 0, -8.74228e-07, 0, 1, 0, 8.74228e-07, 0, -10, 20.4864, 1, 37.1298 )
+
+[node name="background8" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.32836, 1, 27.9293 )
+
+[node name="background10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -8.44806, 1, 37.1437 )
+
+[node name="background11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 11.2734, 1, 27.9203 )
+
+[node name="background5" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 11.1493, 1, -1.7234 )
+
+[node name="background14" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -38.3412, 1, 27.4833 )
+
+[node name="background15" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -27.7429, 1, 37.196 )
+
+[node name="holm1" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.154, -0.494877, 2.893 )
+
+[node name="holm2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9828, -0.644552, 27.9566 )
+
+[node name="background_empty" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.1458, 1, 8.06477 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty5" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.1458, 1, 37.1544 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty7" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -17.9343, 1, 37.1544 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty8" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -28.6409, 1, 17.6173 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty9" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -38.3714, 1, 17.6173 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty10" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -38.3714, 1, 7.62899 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty11" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -38.3714, 1, -1.88347 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty12" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -38.3714, 1, -11.7749 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty13" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -28.433, 1, -11.7749 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty14" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -18.4975, 1, -11.7749 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty15" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -8.71453, 1, -1.79175 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty6" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 10.8214, 1, 37.1544 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty3" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.1458, 1, 17.968 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty4" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 11.0728, 1, 17.968 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty2" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 1.20253, 1, -1.78919 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_empty16" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -37.5909, 1, 37.0402 )
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="background_grass" parent="." instance=ExtResource( 3 )]
+
+[node name="background_grass4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -18.7242, 1, 8.01429 )
+
+[node name="background_grass5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 20.6048, 1, 25.7791 )
+
+[node name="background_grass6" parent="." instance=ExtResource( 3 )]
+transform = Transform( -10, 0, -8.74228e-07, 0, 1, 0, 8.74228e-07, 0, -10, 20.539, 1, 30.7283 )
+
+[node name="background_grass3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 11.1102, 1, 8.18164 )
+
+[node name="background_grass2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -21.4841, 1, 17.565 )
+
+[node name="background_grass7" parent="." instance=ExtResource( 3 )]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -21.4841, 1, 27.4661 )
+
+[node name="background_grass8" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-07, 0, 10, 0, 1, 0, -10, 0, -4.37114e-07, -31.1796, 1, 27.4661 )
+
+[node name="holm3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.5, 0, 0, 0, 1, 0, 0, 0, 1.5, -13.5145, -0.272994, 16.5644 )
+
+[node name="sand" type="Spatial" parent="."]
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side10" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5365, -0.0418807, -7.23448 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side32" type="MeshInstance" parent="sand"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 25.9058, 0.00347364, 42.4193 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side31" type="MeshInstance" parent="sand"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -42.7144, 0.00347364, 42.409 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side25" type="MeshInstance" parent="sand"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -43.7966, 0.00347364, 32.9041 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side20" type="MeshInstance" parent="sand"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -43.8583, 0.00347364, -17.1583 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side19" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.65029, 0.00347364, -17.1583 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side13" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2297, 0.00347364, 0.576539 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side30" type="MeshInstance" parent="sand"]
+transform = Transform( -30, 0, 1.50996e-07, 0, 1, 0, -4.52987e-06, 0, -1, 10.4434, 0.0114034, 43.3837 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side29" type="MeshInstance" parent="sand"]
+transform = Transform( -30, 0, 1.50996e-07, 0, 1, 0, -4.52987e-06, 0, -1, -19.2656, 0.0114034, 43.3837 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side28" type="MeshInstance" parent="sand"]
+transform = Transform( -8, 0, 8.74228e-08, 0, 1, 0, -6.99382e-07, 0, -1, -38.2658, 0.0114034, 43.3837 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side27" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, 1, 0, 1, 0, -8, 0, -4.37114e-08, -43.7063, 0.0114034, 38.182 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side24" type="MeshInstance" parent="sand"]
+transform = Transform( -9.61651e-07, 0, 1, 0, 1, 0, -22, 0, -4.37114e-08, -44.7799, 0.0114033, 21.4964 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side23" type="MeshInstance" parent="sand"]
+transform = Transform( -8.74228e-07, 0, 1, 0, 1, 0, -20, 0, -4.37114e-08, -44.8624, 0.0114033, 0.828142 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side22" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, 1, 0, 1, 0, -8, 0, -4.37114e-08, -44.8624, 0.0114033, -13.0117 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side21" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, -39.4756, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side5" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, -33.5683, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side4" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, -25.5799, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side26" type="MeshInstance" parent="sand"]
+transform = Transform( -0.5, 0, -1.50996e-07, 0, 1, 0, 7.54979e-08, 0, -1, -43.3076, -0.0353494, 33.8007 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side8" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.4988, -0.0353494, -0.365139 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side7" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63882, -0.00505018, -8.19422 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side9" type="MeshInstance" parent="sand"]
+transform = Transform( -2.62268e-07, 0, -1, 0, 1, 0, 6, 0, -4.37114e-08, 17.5157, -0.0229917, -3.78486 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side18" type="MeshInstance" parent="sand"]
+transform = Transform( -4.37114e-07, 0, -1, 0, 1, 0, 10, 0, -4.37114e-08, 26.9326, 0.0100964, 37.2062 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side17" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, -1, 0, 1, 0, 8, 0, -4.37114e-08, 26.9322, 0.0100964, 28.5238 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side16" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, -1, 0, 1, 0, 8, 0, -4.37114e-08, 27.0629, 0.0100964, 20.6937 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side15" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, -1, 0, 1, 0, 8, 0, -4.37114e-08, 27.216, 0.0100964, 12.8259 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side14" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, -1, 0, 1, 0, 8, 0, -4.37114e-08, 27.216, 0.0100964, 4.91899 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side6" type="MeshInstance" parent="sand"]
+transform = Transform( -3.49691e-07, 0, -1, 0, 1, 0, 8, 0, -4.37114e-08, 7.63882, 0.0100964, -12.6712 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side12" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, 21.7799, 0.0175323, -0.391706 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side11" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, 12.098, -0.00300848, -8.20158 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side3" type="MeshInstance" parent="sand"]
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 1, 2.15338, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side2" type="MeshInstance" parent="sand"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 1, -6.7914, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side" type="MeshInstance" parent="sand"]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 1, -16.706, 0.0114033, -18.1481 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="w" type="MeshInstance" parent="sand"]
+transform = Transform( 16, 0, 0, 0, 3, 0, 0, 0, 3, 9.08589, -1.37607, -9.70657 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x4" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.57, -0.325033, -12.4611 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x5" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6188, -0.272962, -22.8963 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x6" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.3512, -0.429909, -4.74994 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x7" type="MeshInstance" parent="sand"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 30.9196, -0.494645, 47.258 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x8" type="MeshInstance" parent="sand"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -47.9144, -0.323749, 47.258 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="Beach_Terrain_Sand_Corner_Outer_4x9" type="MeshInstance" parent="sand"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48.1285, -0.28369, -23.1143 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../w14")
+material/0 = null
+
+[node name="w14" type="MeshInstance" parent="sand"]
+transform = Transform( -6.99382e-07, 0, 6, 0, 3, 0, -16, 0, -2.62268e-07, 9.49389, -1.37607, -13.537 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w21" type="MeshInstance" parent="sand"]
+transform = Transform( -6.99382e-07, 0, 6, 0, 3, 0, -16, 0, -2.62268e-07, 15.2902, -1.37607, -4.9069 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w3" type="MeshInstance" parent="sand"]
+transform = Transform( 12, 0, 0, 0, 3, 0, 0, 0, 3, 23.9469, -1.37607, -1.93624 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w4" type="MeshInstance" parent="sand"]
+transform = Transform( -9.61651e-07, 0, 3, 0, 3, 0, -22, 0, -1.31134e-07, 28.449, -1.37607, 10.533 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w15" type="MeshInstance" parent="sand"]
+transform = Transform( -2.01072e-06, 0, -1, 0, 1, 0, 46, 0, -4.37114e-08, 34.7097, -0.41942, 21.5745 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w16" type="MeshInstance" parent="sand"]
+transform = Transform( -46, 0, -8.74228e-08, 0, 1, 0, 4.02145e-06, 0, -1, 4.55673, -0.41942, 51.2845 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w17" type="MeshInstance" parent="sand"]
+transform = Transform( -46, 0, -8.74228e-08, 0, 1, 0, 4.02145e-06, 0, -1, -22.4163, -0.41942, 51.2845 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w18" type="MeshInstance" parent="sand"]
+transform = Transform( -2.79753e-06, 0, 1, 0, 1, 0, -64, 0, -4.37114e-08, -51.9123, -0.279942, 12.3875 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w19" type="MeshInstance" parent="sand"]
+transform = Transform( 56, 0, 0, 0, 1, 0, 0, 0, 1, -17.7627, -0.279942, -26.9748 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w20" type="MeshInstance" parent="sand"]
+transform = Transform( -3.0598e-07, 0, -1, 0, 1, 0, 7, 0, -4.37114e-08, 17.9082, -0.279942, -16.3678 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w22" type="MeshInstance" parent="sand"]
+transform = Transform( -3.0598e-07, 0, -1, 0, 1, 0, 7, 0, -4.37114e-08, 24.9082, -0.279942, -6.20478 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w23" type="MeshInstance" parent="sand"]
+transform = Transform( 7, 0, 0, 0, 1, 0, 0, 0, 1, 25.2009, -0.279942, -8.77174 )
+mesh = ExtResource( 10 )
+material/0 = null
+
+[node name="w5" type="MeshInstance" parent="sand"]
+transform = Transform( -9.61651e-07, 0, 3, 0, 3, 0, -22, 0, -1.31134e-07, 28.4924, -1.37607, 32.4266 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w6" type="MeshInstance" parent="sand"]
+transform = Transform( 22, 0, 0, 0, 3, 0, 0, 0, 3, 18.939, -1.37607, 44.5154 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w7" type="MeshInstance" parent="sand"]
+transform = Transform( 40, 0, 0, 0, 3, 0, 0, 0, 3, -11.8392, -1.37607, 44.5154 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w8" type="MeshInstance" parent="sand"]
+transform = Transform( 20, 0, 0, 0, 3, 0, 0, 0, 3, -34.7825, -1.37607, 44.5154 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w9" type="MeshInstance" parent="sand"]
+transform = Transform( -8.74228e-07, 0, 3, 0, 3, 0, -20, 0, -1.31134e-07, -45.2382, -1.37607, 35.9643 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w10" type="MeshInstance" parent="sand"]
+transform = Transform( -8.74228e-07, 0, 3, 0, 3, 0, -20, 0, -1.31134e-07, -45.2382, -1.37607, 16.0599 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w11" type="MeshInstance" parent="sand"]
+transform = Transform( -1.09278e-06, 0, 3, 0, 3, 0, -25, 0, -1.31134e-07, -45.2382, -1.37607, -6.35345 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w12" type="MeshInstance" parent="sand"]
+transform = Transform( 40, 0, 0, 0, 3, 0, 0, 0, 3, -26.842, -1.37607, -20.1079 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w13" type="MeshInstance" parent="sand"]
+transform = Transform( 40, 0, 0, 0, 3, 0, 0, 0, 3, -11.9294, -1.37607, -20.0556 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="w2" type="MeshInstance" parent="sand"]
+transform = Transform( -5.24537e-07, 0, 3, 0, 3, 0, -12, 0, -1.31134e-07, 18.5798, -1.37607, -5.18953 )
+mesh = ExtResource( 11 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_2" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -19.748, 0.173953, -20.923 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_3" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -13.8419, 0.173953, -23.446 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_4" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -2.28867, 0.173953, -20.7792 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_5" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 9.79855, 0.173953, -12.728 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_6" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 28.6286, 0.173953, -2.22923 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_7" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 31.0397, 0.173953, 10.349 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_8" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 28.5782, 0.173953, 27.0151 )
+mesh = ExtResource( 20 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Shell_9" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 31.6054, -0.0559541, 19.4452 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_10" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 31.8299, -0.0651304, 7.00806 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_11" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 31.1153, 0.0110816, 0.0735073 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_12" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 29.8744, 0.0279797, -3.78101 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_13" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 28.084, 0.00304353, -6.78567 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_14" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 21.1363, 0.00304353, -11.6748 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_15" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 16.2986, -0.0972353, -14.4042 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_16" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 8.43231, -0.0972353, -25.2931 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_17" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -10.1379, -0.0972353, -25.2931 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_18" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -27.7132, -0.0972353, -25.5885 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_19" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -36.4439, 0.0584863, -24.164 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_20" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -48.9792, 0.0584863, -17.2357 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_21" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -50.4092, 0.0584863, 8.15383 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_22" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -49.1006, 0.0584863, 25.1395 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_23" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -48.9931, 0.0584863, 42.9149 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Beach_Prop_Shell_24" type="MeshInstance" parent="sand"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -39.034, 0.0584863, 46.4322 )
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="water" type="Spatial" parent="."]
+
+[node name="Hilly_Terrain_Water_Flat" type="MeshInstance" parent="water"]
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 20, 27.1084, -0.889524, 49.6688 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat2" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 45.8945, -0.889524, 0.928019 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat3" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -9.39631, -0.889524, -45.4631 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat4" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 47.313, -0.889524, -56.623 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat5" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 61.5975, -0.889524, 59.4229 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat6" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 2.31734, -0.889524, 78.2555 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat7" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -56.5637, -0.889524, 78.2555 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat8" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -75.7863, -0.889524, 18.6272 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat9" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -75.7863, -0.889524, -41.2772 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat10" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -50.9958, -0.889524, -52.0446 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat11" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -50.9958, -0.889524, -110.833 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat12" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -50.9958, -0.889524, -169.515 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat13" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 9.28635, -0.889524, -164.357 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat15" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, -10.0257, -0.889524, -164.109 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat16" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 67.7502, -0.889524, -114.708 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat17" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 67.7502, -0.889524, -172.865 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat18" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 105.476, -0.889524, -54.8242 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat19" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 105.476, -0.889524, 4.93988 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat20" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, 105.476, -0.889524, 110.105 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat21" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -54.243, -0.889524, 178.791 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat22" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -213.215, -0.889524, 178.791 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat23" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -213.215, -0.889524, 21.6723 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat24" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -141.516, -0.889524, 21.6723 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat25" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -141.516, -0.889524, -136.056 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat26" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, -219.371, -0.889524, -136.056 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat27" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, 99.6649, -0.889524, 230.963 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat28" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, 209.455, -0.889524, -45.658 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat29" type="MeshInstance" parent="water"]
+transform = Transform( 160, 0, 0, 0, 1, 0, 0, 0, 160, 156.34, -0.889524, -161.84 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="Hilly_Terrain_Water_Flat14" type="MeshInstance" parent="water"]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 60, 7.8283, -0.889524, -105.48 )
+mesh = ExtResource( 13 )
+material/0 = null
+
+[node name="plantasion" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.45038, 3.10206, 20.4872 )
+
+[node name="planted_carrots_large" type="MeshInstance" parent="plantasion"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0.244274, 0.106223, 0.839966 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+material/55 = null
+material/56 = null
+material/57 = null
+material/58 = null
+material/59 = null
+material/60 = null
+material/61 = null
+material/62 = null
+material/63 = null
+material/64 = null
+material/65 = null
+material/66 = null
+material/67 = null
+material/68 = null
+material/69 = null
+material/70 = null
+material/71 = null
+material/72 = null
+material/73 = null
+material/74 = null
+material/75 = null
+material/76 = null
+material/77 = null
+material/78 = null
+material/79 = null
+
+[node name="island2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 75.3977 )
+
+[node name="new_level" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -25.2725 )
+
+[node name="Beach_Prop_Docks_Corner_Supports" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.290932, -0.0715561, -0.599113 )
+mesh = ExtResource( 19 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports2" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.290932, -0.16849, -1.62938 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports5" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.290932, -0.16849, -2.62525 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports6" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.290932, -0.16849, -3.63034 )
+mesh = ExtResource( 16 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports3" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.427695, -0.595585, -1.61825 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports9" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.23263, -0.595585, -3.65693 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports10" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.23263, -0.595585, -2.70937 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports7" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.400255, -0.595585, -2.70732 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports8" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.400255, -0.595585, -3.88518 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="Beach_Prop_Docks_Corner_Supports4" type="MeshInstance" parent="new_level"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.18938, -0.595585, -1.61825 )
+mesh = ExtResource( 17 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="RigidBody" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6724, 20.3796, 0.0650321 )
+script = ExtResource( 21 )
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
+shape = SubResource( 3 )
+
+[node name="Camera" type="Camera" parent="RigidBody"]
+transform = Transform( -0.173648, -0.852869, 0.492404, 0, 0.5, 0.866026, -0.984808, 0.150384, -0.0868239, 0.978004, -5.00687, 2.39261 )
+current = true
+fov = 62.9101

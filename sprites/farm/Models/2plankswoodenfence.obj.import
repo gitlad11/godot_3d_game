@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/2plankswoodenfence.obj-06022b17c7692ae1d4b1e2cd5fbf6d81.mesh"
+
+[deps]
+
+files=[ "res://.import/2plankswoodenfence.obj-06022b17c7692ae1d4b1e2cd5fbf6d81.mesh" ]
+
+source_file="res://sprites/farm/Models/2plankswoodenfence.obj"
+dest_files=[ "res://.import/2plankswoodenfence.obj-06022b17c7692ae1d4b1e2cd5fbf6d81.mesh", "res://.import/2plankswoodenfence.obj-06022b17c7692ae1d4b1e2cd5fbf6d81.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

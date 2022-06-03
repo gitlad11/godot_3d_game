@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Prop_Rock_2.obj-74f08360380058cf79a2e8a27f4faff8.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Prop_Rock_2.obj-74f08360380058cf79a2e8a27f4faff8.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Cliff_Prop_Rock_2.obj"
+dest_files=[ "res://.import/Cliff_Prop_Rock_2.obj-74f08360380058cf79a2e8a27f4faff8.mesh", "res://.import/Cliff_Prop_Rock_2.obj-74f08360380058cf79a2e8a27f4faff8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

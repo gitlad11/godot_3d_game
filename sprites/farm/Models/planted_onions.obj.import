@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planted_onions.obj-b11916e1d0ad278837300b2bec1993bb.mesh"
+
+[deps]
+
+files=[ "res://.import/planted_onions.obj-b11916e1d0ad278837300b2bec1993bb.mesh" ]
+
+source_file="res://sprites/farm/Models/planted_onions.obj"
+dest_files=[ "res://.import/planted_onions.obj-b11916e1d0ad278837300b2bec1993bb.mesh", "res://.import/planted_onions.obj-b11916e1d0ad278837300b2bec1993bb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

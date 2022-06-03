@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Mountain_1.obj-43495f42ef51ca83b3af051c159e3872.mesh"
+
+[deps]
+
+files=[ "res://.import/Mountain_1.obj-43495f42ef51ca83b3af051c159e3872.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Mountain_1.obj"
+dest_files=[ "res://.import/Mountain_1.obj-43495f42ef51ca83b3af051c159e3872.mesh", "res://.import/Mountain_1.obj-43495f42ef51ca83b3af051c159e3872.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

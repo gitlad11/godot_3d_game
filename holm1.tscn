@@ -1,0 +1,1018 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Corner_Inner_3x3.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Corner_Outer_1x1.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Esse_2x3.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Center.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Corner_Inner_1x1.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_3.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Side_Shift_Gentle.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Side_Gentle.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_1.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Outer_3x3.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Inner_3x3.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_2.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Path_Corner_Y_3x3.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Terrain_Hill_Corner_Outer_2x2.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Grass_Clump_4.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Bush_1.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://sprites/modular_terrain_collection/Hilly_Prop_Flower_Rose.obj" type="ArrayMesh" id=19]
+
+[node name="holm1" type="Spatial"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, -5.94508, 0.576816, -3.50673 )
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base2" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1311, 1.33848, -5.69666 )
+mesh = ExtResource( 13 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.46545, 1.40138, -2.78026 )
+mesh = ExtResource( 10 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x6" type="MeshInstance" parent="."]
+transform = Transform( -1, 1.51808e-08, 8.60946e-08, 0, 0.984808, -0.173648, -8.74228e-08, -0.173648, -0.984808, -8.31928, 1.34037, -4.80922 )
+mesh = ExtResource( 16 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x3" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.40932, 1.40826, -2.75153 )
+mesh = ExtResource( 9 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base")
+material/0 = null
+
+[node name="Hilly_Terrain_Grass_Floor2" type="MeshInstance" parent="."]
+transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, -9.25009, 2.35626, -8.64184 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../Spatial/Hilly_Terrain_Hill_Side_Gentle9")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x9" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.14774, 1.37442, -9.13567 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x3")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x8" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.0025, 1.38856, -9.6049 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x3")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x7" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10.9907, 1.35447, -8.69329 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x3")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Side_Overlap_Side" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, -9.06926, 1.38414, -11.3797 )
+mesh = ExtResource( 8 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x7")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x5" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -4.5707, 1.37806, -4.75346 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x3")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Outer_3x4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56089, 1.37951, -5.72347 )
+mesh = ExtResource( 12 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x3")
+material/0 = null
+
+[node name="Hilly_Terrain_Hill_Corner_Inner_3x3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25697, 1.35968, -8.60847 )
+mesh = ExtResource( 13 )
+skeleton = NodePath("../Hilly_Terrain_Hill_Corner_Outer_3x4")
+material/0 = null
+
+[node name="Hilly_Terrain_Grass_Floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 3, 0, 0, 0, 1, -5.48501, 1.99712, -5.75852 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../Spatial/Hilly_Terrain_Hill_Side_Gentle9")
+material/0 = null
+
+[node name="Hilly_Terrain_Grass_Floor3" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 1, -9.62525, 2.3857, -9.32079 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../Spatial/Hilly_Terrain_Hill_Side_Gentle9")
+material/0 = null
+
+[node name="sand" type="Spatial" parent="."]
+visible = false
+
+[node name="Hilly_Terrain_Path_Corner_Outer_1x1" type="MeshInstance" parent="sand"]
+transform = Transform( 0.998629, 0, -0.026168, 0, 1, 0, 0.052336, 0, 0.499315, -5.35349, 1.37434, -8.32108 )
+mesh = ExtResource( 2 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_1x1")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Terrain_Path_Center" type="MeshInstance" parent="sand"]
+transform = Transform( 1.99726, 0, -0.104672, 0, 1, 0, 0.104672, 0, 1.99726, -4.92418, 1.47633, -9.12871 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Outer_1x1")
+material/0 = null
+
+[node name="Hilly_Terrain_Path_Center3" type="MeshInstance" parent="sand"]
+transform = Transform( 1.99726, 0, -0.104672, 0, 1, 0, 0.104672, 0, 1.99726, -1.5201, 1.41813, -8.97031 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Outer_1x1")
+material/0 = null
+
+[node name="Hilly_Terrain_Path_Center2" type="MeshInstance" parent="sand"]
+transform = Transform( 1.99726, 0, -0.104672, 0, 1, 0, 0.104672, 0, 1.99726, -1.74385, 1.27223, -5.0677 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Outer_1x1")
+material/0 = null
+
+[node name="Hilly_Terrain_Path_Esse_2x3" type="MeshInstance" parent="sand"]
+transform = Transform( 0.939693, 0, -0.17101, 0, 1, 0, 0.34202, 0, 0.469846, -5.98755, 1.37297, -9.4546 )
+visible = false
+mesh = ExtResource( 3 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Outer_1x1")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_1x2" type="MeshInstance" parent="sand"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.5, -4.38954, 1.38179, -7.30701 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../../Hilly_Terrain_Hill_Side_Overlap_Side")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_2x3" type="MeshInstance" parent="sand"]
+transform = Transform( -0.5, 0, -0.433013, 0, 1, 0, 0.866025, 0, -0.25, -3.39542, 1.37391, -3.79544 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_1x2")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Hilly_Terrain_Path_Corner_Y_3x3" type="MeshInstance" parent="sand"]
+transform = Transform( -0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -2.19262, 1.40334, -3.77376 )
+mesh = ExtResource( 15 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_2x3")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_2x2" type="MeshInstance" parent="sand"]
+transform = Transform( 0.34202, 0, -0.469846, 0, 1, 0, 0.939693, 0, 0.17101, -2.64875, 1.39464, -6.07613 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_1x2")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_1x4" type="MeshInstance" parent="sand"]
+transform = Transform( 1.50351, 0, 0.410424, 0, 1, 0, -0.547232, 0, 1.12763, -1.931, 1.43462, -7.50611 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_2x2")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_1x5" type="MeshInstance" parent="sand"]
+transform = Transform( 0.34202, 0, 0.469846, 0, 1, 0, -0.939693, 0, 0.17101, -8.62522, 1.37652, -11.536 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../../Hilly_Terrain_Hill_Side_Overlap_Side")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_1x3" type="MeshInstance" parent="sand"]
+transform = Transform( 0.173648, 0, -0.984808, 0, 1, 0, 0.984808, 0, 0.173648, -2.3002, 1.38005, -6.63807 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../Hilly_Terrain_Path_Corner_Inner_2x2")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Terrain_Path_Corner_Inner_1x1" type="MeshInstance" parent="sand"]
+transform = Transform( 0.939693, 0, -0.17101, 0, 1, 0, 0.34202, 0, 0.469846, -7.52362, 1.37676, -11.0464 )
+mesh = ExtResource( 1 )
+skeleton = NodePath("../../Hilly_Terrain_Hill_Side_Overlap_Side")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Hilly_Terrain_Grass_Floor4" type="MeshInstance" parent="sand"]
+transform = Transform( 0.4, 0, 0, 0, 0.994522, 0.0313585, 0, -0.104528, 0.298357, -2.47651, 1.43638, -6.76976 )
+mesh = ExtResource( 6 )
+skeleton = NodePath("../../../Spatial/Hilly_Terrain_Hill_Side_Gentle9")
+material/0 = null
+
+[node name="grass" type="Spatial" parent="."]
+
+[node name="flowers" type="Spatial" parent="grass"]
+
+[node name="Hilly_Prop_Branch_10" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.63637, 2.42818, -6.70812 )
+use_in_baked_light = true
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_12" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.76048, 2.37076, -6.87339 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_14" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.39885, 2.49179, -6.4661 )
+use_in_baked_light = true
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_15" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.50848, 2.47603, -6.52719 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_16" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.59733, 2.3831, -6.8073 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_17" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.41023, 2.24287, -6.99288 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_18" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.41136, 2.16058, -7.08915 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_19" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.39848, 2.06035, -7.22765 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_20" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.30197, 2.00054, -7.30912 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_21" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.00316, 2.2124, -6.999 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_22" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.22822, 2.27526, -6.89201 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_13" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.69039, 2.28695, -6.97593 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_11" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.62634, 2.47307, -6.55751 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_9" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.38732, 2.40833, -6.72196 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_8" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.40205, 2.425, -6.63442 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_7" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.40602, 2.36042, -6.80325 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_6" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.13432, 2.36124, -6.75019 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="Hilly_Prop_Branch_5" type="MeshInstance" parent="grass/flowers"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.30245, 2.4382, -6.58026 )
+mesh = ExtResource( 19 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+
+[node name="bushes" type="Spatial" parent="grass"]
+
+[node name="Hilly_Prop_Branch_4" type="MeshInstance" parent="grass/bushes"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.86597, 2.5822, -6.02129 )
+use_in_baked_light = true
+mesh = ExtResource( 18 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Prop_Branch_3" type="MeshInstance" parent="grass/bushes"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.23755, 2.57539, -5.03623 )
+mesh = ExtResource( 18 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="Hilly_Prop_Branch_1" type="MeshInstance" parent="grass/bushes"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.39825, 2.5863, -4.83279 )
+mesh = ExtResource( 18 )
+skeleton = NodePath("../..")
+material/0 = null
+
+[node name="grass1" type="Spatial" parent="grass"]
+
+[node name="Hilly_Prop_Branch_10" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.32658, 2.54742, -4.28827 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_11" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.22721, 2.59246, -4.46075 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_12" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.11029, 2.60306, -4.76974 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_13" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.17151, 2.42156, -4.63184 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_14" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.81723, 2.56427, -4.97696 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_16" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.65949, 2.66484, -5.437 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_17" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.13188, 2.63473, -5.40998 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_18" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.46603, 2.73711, -5.14503 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_21" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.47177, 2.59367, -4.46137 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_19" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.41327, 2.62212, -5.3275 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_20" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.96104, 2.587, -4.79775 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_27" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.82027, 2.55538, -5.20036 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_28" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.83926, 2.62623, -5.18609 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_15" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.28706, 2.6627, -5.10262 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_22" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.13972, 2.62996, -5.71867 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_23" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.60554, 2.63041, -5.16649 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_24" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.5035, 2.62909, -5.20279 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_25" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -3.95595, 2.54521, -5.21439 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_26" type="MeshInstance" parent="grass/grass1"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.46632, 2.57934, -4.65995 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="grass2" type="Spatial" parent="grass"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11723, 0.0559494, -2.7424 )
+
+[node name="Hilly_Prop_Branch_10" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.72571, 2.47224, -4.81721 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_11" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.72571, 2.47224, -5.21458 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_12" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.26005, 2.47224, -5.21458 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_13" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.26005, 2.47224, -5.66273 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_14" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.28471, 2.47224, -5.66273 )
+mesh = ExtResource( 7 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Hilly_Prop_Branch_15" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.39772, 2.52426, -5.56603 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_16" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.84261, 2.52426, -5.56603 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_17" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.84261, 2.52426, -5.01483 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_32" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.03839, 2.35832, -4.4161 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_33" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.41803, 2.55623, -4.48616 )
+mesh = ExtResource( 11 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Hilly_Prop_Branch_18" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.12923, 2.50322, -5.71001 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_34" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.06371, 2.49816, -6.0617 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_35" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.65466, 2.45767, -6.35787 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_36" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.43706, 2.61965, -5.95794 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_37" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.43706, 2.61965, -5.95794 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_38" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.4249, 2.52485, -6.68409 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_39" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.85567, 2.55431, -6.53616 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_19" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.12923, 2.52426, -5.26123 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_20" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.57257, 2.52426, -5.26123 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_21" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.53048, 2.49536, -5.77015 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_22" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.26608, 2.51671, -4.37159 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_23" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.64662, 2.49348, -4.86328 )
+mesh = ExtResource( 17 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="Hilly_Prop_Branch_24" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.69509, 2.48459, -4.40938 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_25" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.10702, 2.47801, -4.73129 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_26" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.7048, 2.56947, -6.07598 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_27" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.54173, 2.40871, -4.44092 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_28" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.32811, 2.51208, -5.17307 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_29" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.59092, 2.51681, -3.56597 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_30" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.33289, 2.51297, -4.00786 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Hilly_Prop_Branch_31" type="MeshInstance" parent="grass/grass2"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -3.9041, 2.4492, -4.72453 )
+mesh = ExtResource( 14 )
+skeleton = NodePath("../..")
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hilly_Prop_Bush_3.obj-97919f48ad09a10a96b237d973ec2be6.mesh"
+
+[deps]
+
+files=[ "res://.import/Hilly_Prop_Bush_3.obj-97919f48ad09a10a96b237d973ec2be6.mesh" ]
+
+source_file="res://sprites/modular_terrain_collection/Hilly_Prop_Bush_3.obj"
+dest_files=[ "res://.import/Hilly_Prop_Bush_3.obj-97919f48ad09a10a96b237d973ec2be6.mesh", "res://.import/Hilly_Prop_Bush_3.obj-97919f48ad09a10a96b237d973ec2be6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 2, 2, 2 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
